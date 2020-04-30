@@ -27,7 +27,6 @@ def selects_oldest_bear_and_returns_name_and_age
   LIMIT 1"
 end
 
-
 def select_youngest_bear_and_returns_name_and_age
   "SELECT name, age 
   FROM bears
@@ -35,13 +34,12 @@ def select_youngest_bear_and_returns_name_and_age
   LIMIT 1"
 end
 
-
 def selects_most_prominent_color_and_returns_with_count
-  "SELECT color, 
-  COUNT(color)
+  "SELECT color,
+  COUNT (color)
   FROM bears
   GROUP BY color
-  ORDER BY age DESC
+  ORDER BY color DESC
   LIMIT 1"
 end
 
